@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
-import { fetshMovieById } from '../../../js/tmdb-api';
+import { fetshMovieById } from '../../js/tmdb-api';
 import css from './MovieDetailsPage.module.css';
 
 export default function MovieDetailsPage() {

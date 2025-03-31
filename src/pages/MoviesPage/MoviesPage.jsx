@@ -1,12 +1,12 @@
 // import { Formik, Form, Field } from 'formik';
 import { useEffect, useState } from 'react';
-import { fetchSearch } from '../../../js/tmdb-api';
+import { fetchSearch } from '../../js/tmdb-api.js';
 import { useDebounce } from 'use-debounce';
 // import { toast } from 'react-hot-toast';
 import css from './MoviesPage.module.css';
 
 import { useSearchParams } from 'react-router-dom';
-import MovieList from '../../MovieList/MovieList';
+import MovieList from '../../components/MovieList/MovieList.jsx';
 
 export default function MoviesPage() {
   const [movies, setMovies] = useState([]);
